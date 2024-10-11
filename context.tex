@@ -1,0 +1,156 @@
+\onehalfspacing
+\tableofcontents
+\singlespacing
+
+\section{Environment}
+\subsection{vimrc}
+\lstinputlisting{library/Environment/vimrc.txt}
+\subsection{vim grid paper script}
+\lstinputlisting{library/Environment/grid paper script.txt}
+\subsection{build command}
+\lstinputlisting{library/Environment/build command.txt}
+\subsection{stress test}
+\lstinputlisting{library/Environment/stress test.txt}
+
+\section{Misc}
+\subsection{random}
+\lstinputlisting{library/Misc/random.cpp}
+\subsection{pbds}
+\lstinputlisting{library/Misc/pbds.cpp}
+\subsection{pragma}
+\lstinputlisting{library/Misc/pragma.cpp}
+\subsection{debug template}
+\lstinputlisting{library/Misc/debug template.cpp}
+\subsection{int128 io}
+\lstinputlisting{library/Misc/__int128.cpp}
+\subsection{modint}
+\lstinputlisting{library/Misc/modular integer.cpp}
+\subsection{coordinate compression}
+\lstinputlisting{library/Misc/coordinate compression.cpp}
+\subsection{mo's algorithm}
+\lstinputlisting{library/Misc/mo's algorithm.cpp}
+\subsection{two sat}
+\lstinputlisting{library/Misc/two sat.cpp}
+\subsection{gaussian elimination}
+\lstinputlisting{library/Misc/gaussian elimination.cpp}
+
+\section{Data Structure}
+\subsection{BIT}
+\lstinputlisting{library/Data Structure/binary indexed tree.cpp}
+\subsection{disjoint set}
+\lstinputlisting{library/Data Structure/disjoint set.cpp}
+\subsection{sparse table}
+\lstinputlisting{library/Data Structure/sparse table.cpp}
+\subsection{segment tree}
+\lstinputlisting{library/Data Structure/segment tree.cpp}
+\subsection{segment tree(lazy propagation)}
+\lstinputlisting{library/Data Structure/segment tree(with lazy propagation).cpp}
+\subsection{treap}
+\lstinputlisting{library/Data Structure/treap.cpp}
+\subsection{lichao segment tree}
+\lstinputlisting{library/Data Structure/lichao tree.cpp}
+\subsection{binary trie}
+\lstinputlisting{library/Data Structure/binary trie.cpp}
+
+\section{Flow and Matching}
+\subsection{bipartite matching}
+\lstinputlisting{library/Flow/bipartite matching(hopcroft karp).cpp}
+\subsection{hungarian algorithm}
+\lstinputlisting{library/Flow/maximum weight bipartite matching.cpp}
+\subsection{maximum flow}
+\lstinputlisting{library/Flow/maximum flow(dinic).cpp}
+\subsection{minimum cost flow}
+\lstinputlisting{library/Flow/minimum cost flow.cpp}
+\subsection{bounded flow}
+\onehalfspacing
+\begin{enumerate}
+    \item Construct super source \mbox{\large\(S\)} and sink \mbox{\large\(T\)}.
+    \item For each edge \mbox{\large\((x, y, l, u)\)}, connect \mbox{\large\(x \rightarrow y\)} with capacity \mbox{\large\(u - l\)}.
+    \item For each vertex \mbox{\large\(v\)}, denote by \mbox{\large\(in(v)\)} the difference between the sum of incoming lower bo-\\unds and the sum of outgoing lower bounds.
+    \item If \mbox{\large\(in(v) > 0\)}, connect \mbox{\large\(S \rightarrow v\)} with an additional edge of capacity \mbox{\large\(in(v)\)}, otherwise, connect\\ \mbox{\large\(v \rightarrow T\)} with an additional edge of capacity\\ \mbox{\large\(-in(v)\)}.
+    \item The arbitrary flow only exists when all the edges from \mbox{\large\(S\)} are fully utilized.
+    \begin{itemize}
+        \item To maximize/minimize flow from \mbox{\large\(A\)} to \mbox{\large\(B\)}, connect \mbox{\large\(B \rightarrow A\)} with capacity \mbox{\large\(\infty\)}, and remove all additional edges. Then apply maximum flow on residual network from \mbox{\large\(A\)} to \mbox{\large\(B\)} or from \mbox{\large\(B\)} to \mbox{\large\(A\)}. The solution of each edge \mbox{\large\(e\)} is \mbox{\large\(l_e + f_e\)}
+    \end{itemize}
+\end{enumerate}
+\singlespacing
+
+\section{Geometry}
+\subsection{2D point definition}
+\lstinputlisting{library/Geometry/2D point definition.cpp}
+\subsection{convex hull}
+\lstinputlisting{library/Geometry/convex hull.cpp}
+\subsection{polar sort}
+\lstinputlisting{library/Geometry/polar sort.cpp}
+\subsection{rotating calipers}
+\lstinputlisting{library/Geometry/rotating calipers.cpp}
+
+\section{Graph}
+\subsection{HLD}
+\lstinputlisting{library/Graph/heavy light decomposition.cpp}
+\subsection{SCC}
+\lstinputlisting{library/Graph/strongly connected components.cpp}
+\subsection{BECC}
+\lstinputlisting{library/Graph/two edge connected components.cpp}
+\subsection{BVCC}
+\lstinputlisting{library/Graph/two vertex connected components.cpp}
+\subsection{virtual tree}
+\lstinputlisting{library/Graph/virtual tree.cpp}
+
+\section{Math}
+\subsection{linear sieve}
+\lstinputlisting{library/Math/linear sieve.cpp}
+\subsection{josephus}
+\lstinputlisting{library/Math/josephus.cpp}
+\subsection{type definition}
+\lstinputlisting{library/Math/type definition.cpp}
+\subsection{floor sum}
+\lstinputlisting{library/Math/floor sum.cpp}
+\subsection{CRT}
+\lstinputlisting{library/Math/chinese reaminder theorem.cpp}
+\subsection{FFT}
+\lstinputlisting{library/Math/fast fourier transform.cpp}
+\subsection{convolution(mod)}
+\lstinputlisting{library/Math/convolution(mod).cpp}
+\subsection{convolution(without mod)}
+\lstinputlisting{library/Math/convolution(without mod).cpp}
+\subsection{exgcd}
+\lstinputlisting{library/Math/extended euclidean algorithm.cpp}
+\subsection{primality test}
+\lstinputlisting{library/Math/miller rabin primality test.cpp}
+\subsection{pollard rho}
+\lstinputlisting{library/Math/pollard rho.cpp}
+
+\section{String}
+\subsection{z algorithm}
+\lstinputlisting{library/String/z algorithm.cpp}
+\subsection{KMP}
+\lstinputlisting{library/String/knuth morris pratt.cpp}
+\subsection{manacher algorithm}
+\lstinputlisting{library/String/manacher.cpp}
+\subsection{rolling hash}
+\lstinputlisting{library/String/rolling hash.cpp}
+\subsection{SA}
+\lstinputlisting{library/String/suffix array(short implement).cpp}
+\subsection{SAIS}
+\lstinputlisting{library/String/suffix array(SAIS).cpp}
+\subsection{LCP}
+\lstinputlisting{library/String/longest common prefix(kasai).cpp}
+
+\section{Theorem}
+\doublespacing
+\subsection{fibonacci}
+\mbox{\Large\(F_{n-1} F_{n+1} - F_n^2 = (-1)^n\)}\\
+\mbox{\Large\(F_{n+k} = F_k F_{n+1} + F_{k-1} F_n\)}\\
+\mbox{\Large\(gcd(F_m, F_n) = F_{gcd(m, n)}\)}
+\subsection{catalan number}
+\mbox{\Large\(C_n = \frac{1}{n + 1} \binom{2n}{n}\)}
+\subsection{pick theorem}
+\mbox{\Large\(A=I+\frac{B}{2}-1\)}
+\subsection{lucas theorem}
+\mbox{\Large\(\binom{N}{K} \equiv \prod_{i=0}^{x}\binom{n_i}{k_i} (mod\;P)\)}
+\singlespacing
+
+\section{Python}
+\lstinputlisting[language=python]{library/Python/cheat sheet.py}
+

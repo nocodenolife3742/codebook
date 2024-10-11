@@ -1,0 +1,4 @@
+for ((i = 1; ; ++i)); do
+    ./gen > tc
+    diff -w <(./code < tc) <(./hack < tc) || break
+done

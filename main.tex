@@ -1,0 +1,48 @@
+\documentclass{article}
+
+% -- 套件 -- %
+\usepackage[a4paper,twocolumn,margin=0.8cm,tmargin=-0.4cm,includehead,includefoot]{geometry} % 設定版面、邊界套件
+\usepackage{listings} % 程式碼鑲嵌套件
+\usepackage{color} % 顏色套件
+\usepackage[x11names]{xcolor} % 顏色套件
+\usepackage{fancyhdr} % 頁首頁尾套件
+\usepackage[quiet]{xeCJK} % 中文套件
+\usepackage[compact]{titlesec} % 緊湊排版套件
+\usepackage{setspace} % 字體高度套件
+\usepackage{amsmath} % 數學公式擴充套件
+
+% -- xeCJK 設定 -- %
+\setmainfont[Scale=1.2]{Open Sans}
+\setmonofont{SourceCodePro-Regular.ttf} % 設定等寬字體(用於程式區塊)
+\setCJKmonofont{Noto Sans CJK TC} % 設定等寬中文字體(用於程式區塊)
+\XeTeXlinebreaklocale "zh" % 中文自動換行
+\DeclareMathSizes{20}{20.5}{10}{10}
+
+% -- 頁面設定 -- %
+\headheight=18pt
+\headsep=10pt
+\voffset=30pt
+
+\lstset{
+    language=c++,
+    basicstyle=\ttfamily,
+    frame=false,
+    breaklines=true,
+    showstringspaces=false,
+    keywordstyle=\bfseries\color{Blue1},
+    commentstyle=\itshape\color{Red4},
+    stringstyle=\itshape\color{Green4},
+    rulecolor=\color{black}
+}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead[]{\large 臺北施工大隊}
+\fancyhead[L]{\large 國立臺北科技大學}
+\fancyhead[R]{\large \thepage}
+
+\include{context.tex}
+
+\end{document}

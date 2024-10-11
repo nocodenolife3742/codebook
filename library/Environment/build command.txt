@@ -1,0 +1,1 @@
+g++ code.cpp -DDEBUG -Wall -Wextra -fsanitize=address,undefined -O2 -std=c++17
